@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 5</name>
+    <events>
+        <variable constant="0" name="Sttaar5" sid="946018243346760" static="0" type="number">0</variable>
+        <event-block sid="348067366110915">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="273836328732563" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="272165488733983" type="System">
+                    <param id="0" name="Variable">Sttaar</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="597568992370279">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="824392665678534" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="12" name="Fall through" sid="702095160339467" type="Player" />
+            </actions>
+        </event-block>
+        <event-block sid="517978332430079">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="761298652262904" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="731246507803956" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="736752222286313">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="428278994999498" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="416660187319355" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="958655173885984">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="136139443508718" type="Player">
+                    <param id="0" name="Object">Sttaarr</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="980346509674077" type="System">
+                    <param id="0" name="Variable">Sttaar</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="867141556727175" type="Sttaarr" />
+            </actions>
+        </event-block>
+        <event-block sid="284925859566984">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="871045171883555" type="System">
+                    <param id="0" name="Variable">Sttaar</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="247761100556016" type="door_opened">
+                    <param id="0" name="X">980</param>
+                    <param id="1" name="Y">301</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="550012385220189" type="System">
+                    <param id="0" name="Layout">End</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="706207851778057">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="967213475646460" type="Keyboard">
+                    <param id="0" name="Key">77</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="801068057751570" type="Player">
+                    <param id="0" name="Object">door_opened</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="323740603146372" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="552754975628704" type="System">
+                    <param id="0" name="Layout">Level 5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="131377867113198">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="575975643265506" type="Player">
+                    <param id="0" name="Object">TiledBones</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="514388333789838" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="473625958687440" type="TiledBones" />
+            </actions>
+        </event-block>
+        <event-block sid="710022914489035">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="978523142099059" type="Player">
+                    <param id="0" name="Object">TiledBackground36</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="712265999307057" type="System">
+                    <param id="0" name="Layout">Level 4</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
